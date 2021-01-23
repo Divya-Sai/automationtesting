@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [automationtesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifySlider"/>
+          <include name="clickOnShopMenu"/>
+        </methods>
+      </class> <!-- in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001 -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [automationtesting] -->
