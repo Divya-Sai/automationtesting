@@ -2,10 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name ="automationtesting" thread-count="5" parallel="tests" >
 
+<listeners>
+
+		<listener
+			class-name="in.automationtesting.practise.utilities.ExtentReportManager" />
+
+	</listeners>
+	
 <test name ="chrome">
 <parameter name="browser" value="Chrome" />
 <classes>
-<class name ="in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001"/>
+<class name ="in.automationtesting.practice.testCases.MyAccountLogin_TC007"/>
 </classes>
 </test>
 

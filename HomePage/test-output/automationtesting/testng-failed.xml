@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [automationtesting]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="in.automationtesting.practise.utilities.ExtentReportManager"/>
+  </listeners>
   <test thread-count="5" parallel="tests" name="chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001">
+      <class name="in.automationtesting.practice.testCases.MyAccountLogin_TC007">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifySlider"/>
-          <include name="clickOnShopMenu"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001 -->
+      </class> <!-- in.automationtesting.practice.testCases.MyAccountLogin_TC007 -->
     </classes>
   </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [automationtesting] -->

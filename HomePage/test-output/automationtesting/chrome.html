@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 23 11:00:33 GMT 2021</td>
+<td>Started on:</td><td>Mon Jan 25 15:05:30 GMT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26052 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33155 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,20 +75,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.clickOnShopMenu()'><b>clickOnShopMenu</b><br>Test class: in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001<br>Test method: Click on Shop Menu</td>
-<td><div><pre>java.lang.NullPointerException
-	at java.base/java.io.File.&lt;init&gt;(File.java:279)
-	at in.automationtesting.practice.testBase.BaseClass.takeScreenshot(BaseClass.java:57)
-	at in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.clickOnShopMenu(HomePageWithThreeSliders_TC001.java:29)
+<td title='in.automationtesting.practice.testCases.MyAccountLogin_TC007.Login()'><b>Login</b><br>Test class: in.automationtesting.practice.testCases.MyAccountLogin_TC007<br>Test method: Click on Register</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at in.automationtesting.practice.testCases.MyAccountLogin_TC007.Login(MyAccountLogin_TC007.java:73)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1759272801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1759272801'><pre>java.lang.NullPointerException
-	at java.base/java.io.File.&lt;init&gt;(File.java:279)
-	at in.automationtesting.practice.testBase.BaseClass.takeScreenshot(BaseClass.java:57)
-	at in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.clickOnShopMenu(HomePageWithThreeSliders_TC001.java:29)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1984715737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1984715737'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at in.automationtesting.practice.testCases.MyAccountLogin_TC007.Login(MyAccountLogin_TC007.java:73)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,91 +110,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </pre></div></td>
-<td>12</td>
-<td>in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001@232a7d73</td></tr>
-<tr>
-<td title='in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.verifySlider()'><b>verifySlider</b><br>Test class: in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001<br>Test method: Sliders</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[@class=&apos;n2-ss-slide-background&apos;]&quot;}
-  (Session info: chrome=87.0.4280.141)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SAIBHASKAR-PC&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ssaib\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8cb4a6573f3e0245aa14c22dbe17f712
-*** Element info: {Using=xpath, value=.//div[@class=&apos;n2-ss-slide-background&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getSize(Unknown Source)
-	at in.automationtesting.practice.pageObjects.HomePage.getSliders(HomePage.java:74)
-	at in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.verifySlider(HomePageWithThreeSliders_TC001.java:39)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1101872732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1101872732'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[@class=&apos;n2-ss-slide-background&apos;]&quot;}
-  (Session info: chrome=87.0.4280.141)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SAIBHASKAR-PC&apos;, ip: &apos;192.168.1.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ssaib\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8cb4a6573f3e0245aa14c22dbe17f712
-*** Element info: {Using=xpath, value=.//div[@class=&apos;n2-ss-slide-background&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.getSize(Unknown Source)
-	at in.automationtesting.practice.pageObjects.HomePage.getSliders(HomePage.java:74)
-	at in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.verifySlider(HomePageWithThreeSliders_TC001.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre></div></td>
-<td>0</td>
-<td>in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001@232a7d73</td></tr>
+<td>7</td>
+<td>in.automationtesting.practice.testCases.MyAccountLogin_TC007@4b3a45f1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -204,10 +121,15 @@ Session ID: 8cb4a6573f3e0245aa14c22dbe17f712
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001.setURL()'><b>setURL</b><br>Test class: in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001<br>Test method: setURL</td>
+<td title='in.automationtesting.practice.testCases.MyAccountLogin_TC007.clickOnMyAccMenu()'><b>clickOnMyAccMenu</b><br>Test class: in.automationtesting.practice.testCases.MyAccountLogin_TC007<br>Test method: Click on My Account Menu</td>
+<td></td>
+<td>12</td>
+<td>in.automationtesting.practice.testCases.MyAccountLogin_TC007@4b3a45f1</td></tr>
+<tr>
+<td title='in.automationtesting.practice.testCases.MyAccountLogin_TC007.setURL()'><b>setURL</b><br>Test class: in.automationtesting.practice.testCases.MyAccountLogin_TC007<br>Test method: setURL</td>
 <td></td>
 <td>7</td>
-<td>in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001@232a7d73</td></tr>
+<td>in.automationtesting.practice.testCases.MyAccountLogin_TC007@4b3a45f1</td></tr>
 </table><p>
 </body>
 </html>

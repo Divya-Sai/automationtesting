@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -18,6 +19,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import in.automationtesting.practice.pageObjects.HomePage;
+import in.automationtesting.practice.pageObjects.MyAccountPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
@@ -25,6 +27,7 @@ public class BaseClass {
 	public  WebDriver driver;
 	public Properties prop;
 	public HomePage homepage;
+	public MyAccountPage accPage;
 	public Logger logger = LogManager.getLogger(this.getClass()) ;
 	
 	
@@ -57,5 +60,7 @@ public class BaseClass {
 		File trg = new File(".\\Screenshot"+ssName+".png");
 		FileUtils.copyFile(src, trg);
 	}
+	
+	
 
 }
