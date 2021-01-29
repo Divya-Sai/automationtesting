@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HomePage" thread-count="5" parallel="tests">
+
+
+	<!--  <listeners>
+
+		<listener
+			class-name="com.nopCommerce.utilities.ExtentReportManager" />
+
+	</listeners>-->
+
+	<parameter name="browser" value="chrome" />
+
+	<test name="MyAccountLogin_TC001">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC001" />
+		</classes>
+	</test>
+	
+	<test name="MyAccountLogin_TC002">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC002" />
+		</classes>
+	</test>
+	
+	<test name="MyAccountLogin_TC003">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC003" />
+		</classes>
+	</test>
+	
+	<test name="MyAccountLogin_TC004">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC004" />
+		</classes>
+	</test>
+	
+	<test name="MyAccountLogin_TC005">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC005" />
+		</classes>
+	</test>
+	
+	<test name="MyAccountLogin_TC007">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC007" />
+		</classes>
+	</test>
+	
+	<test name="MyAccountLogin_TC008">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.MyAccountLogin_TC008" />
+		</classes>
+	</test>
+	
+	<test name="HomePageWithThreeSliders_TC001">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.HomePageWithThreeSliders_TC001" />
+		</classes>
+	</test>
+	
+	<test name="HomePageWithThreeArrivals">
+		<classes>
+			<class
+				name="in.automationtesting.practice.testCases.HomePageWithThreeArrivals" />
+		</classes>
+	</test>
+
+
+</suite>

@@ -7,6 +7,27 @@
   <test thread-count="5" parallel="tests" name="chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="in.automationtesting.practice.testCases.MyAccountLogin_TC003">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- in.automationtesting.practice.testCases.MyAccountLogin_TC003 -->
+      <class name="in.automationtesting.practice.testCases.MyAccountLogin_TC004">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- in.automationtesting.practice.testCases.MyAccountLogin_TC004 -->
+      <class name="in.automationtesting.practice.testCases.HomePageWithThreeArrivals">
+        <methods>
+          <include name="setUp"/>
+          <include name="homepagenav"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.automationtesting.practice.testCases.HomePageWithThreeArrivals -->
       <class name="in.automationtesting.practice.testCases.MyAccountLogin_TC007">
         <methods>
           <include name="setUp"/>
@@ -14,6 +35,20 @@
           <include name="Login"/>
         </methods>
       </class> <!-- in.automationtesting.practice.testCases.MyAccountLogin_TC007 -->
+      <class name="in.automationtesting.practice.testCases.MyAccountLogin_TC005">
+        <methods>
+          <include name="setUp"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.automationtesting.practice.testCases.MyAccountLogin_TC005 -->
+      <class name="in.automationtesting.practice.testCases.MyAccountLogin_TC002">
+        <methods>
+          <include name="setUp"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.automationtesting.practice.testCases.MyAccountLogin_TC002 -->
     </classes>
   </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [automationtesting] -->
